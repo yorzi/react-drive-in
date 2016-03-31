@@ -75,6 +75,6 @@
   },
   "homepage": "https://github.com/ronik-design/react-drive-in",
   "dependencies": {
-    "drive-in": "^1.5.2"
+    "drive-in": "yorzi/drive-in"
   }
 }

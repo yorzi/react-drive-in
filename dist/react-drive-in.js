@@ -13,7 +13,7 @@ babelHelpers.classCallCheck = function (instance, Constructor) {
   }
 };
 
-babelHelpers.createClass = (function () {
+babelHelpers.createClass = function () {
   function defineProperties(target, props) {
     for (var i = 0; i < props.length; i++) {
       var descriptor = props[i];
@@ -29,7 +29,7 @@ babelHelpers.createClass = (function () {
     if (staticProps) defineProperties(Constructor, staticProps);
     return Constructor;
   };
-})();
+}();
 
 babelHelpers.inherits = function (subClass, superClass) {
   if (typeof superClass !== "function" && superClass !== null) {
@@ -56,7 +56,8 @@ babelHelpers.possibleConstructorReturn = function (self, call) {
 };
 
 babelHelpers;
-var ReactDriveIn = (function (_React$Component) {
+
+var ReactDriveIn = function (_React$Component) {
   babelHelpers.inherits(ReactDriveIn, _React$Component);
 
   function ReactDriveIn(props) {
@@ -135,7 +136,7 @@ var ReactDriveIn = (function (_React$Component) {
     value: function componentDidMount() {
       var _this2 = this;
 
-      var playlist = undefined;
+      var playlist = void 0;
 
       this.DI.init({
         el: this.getMedia(),
@@ -231,7 +232,7 @@ var ReactDriveIn = (function (_React$Component) {
     }
   }]);
   return ReactDriveIn;
-})(React.Component);
+}(React.Component);
 
 ReactDriveIn.displayName = "DriveIn";
 
